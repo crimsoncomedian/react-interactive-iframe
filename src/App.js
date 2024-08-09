@@ -106,7 +106,7 @@ const CorrelationExplorer = () => {
             <ScatterChart margin={{ top: 20, right: 20, bottom: 0, left: 20 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#a0aec0" />
               <XAxis type="number" dataKey="x" name="Variable X" unit="%" stroke="#4a5568" />
-              <YAxis type="number" dataKey="y" name="Variable Y" unit="%" stroke="#4a5568" domain={[0, 100]} />
+              <YAxis type="number" dataKey="y" name="Variable Y" unit="%" stroke="#4a5568" domain={[0, 100]} allowDataOverflow={true} />
               <ZAxis type="number" range={[20]} />
               <Tooltip cursor={{ strokeDasharray: '3 3' }} />
               <Scatter 
