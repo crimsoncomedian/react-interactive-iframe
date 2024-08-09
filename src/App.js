@@ -74,22 +74,7 @@ const CorrelationExplorer = () => {
   };
 
   return (
-    <div className="p-8 bg-transparent rounded-xl shadow-lg max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold mb-6 text-center text-indigo-800">Correlation Coefficient Explorer</h1>
-      
-      <div className="bg-white p-6 rounded-lg shadow-md mb-6">
-        <h2 className="text-2xl font-semibold mb-4 text-indigo-700">What is Correlation Coefficient?</h2>
-        <p className="text-gray-700 mb-4">
-          The correlation coefficient measures the strength and direction of the relationship between two variables. 
-          It ranges from -1 to 1, where:
-        </p>
-        <ul className="list-disc list-inside text-gray-700 mb-4">
-          <li>1 indicates a perfect positive correlation</li>
-          <li>0 indicates no correlation</li>
-          <li>-1 indicates a perfect negative correlation</li>
-        </ul>
-      </div>
-
+    <div className="app-container p-8 bg-transparent rounded-xl shadow-lg max-w-4xl mx-auto">
       <div className="bg-white p-6 rounded-lg shadow-md mb-6">
         <div className="flex items-center justify-between mb-4">
           <label className="text-xl font-medium text-indigo-700" htmlFor="correlation-input">
@@ -137,16 +122,6 @@ const CorrelationExplorer = () => {
             </ScatterChart>
           </ResponsiveContainer>
         </div>
-      </div>
-
-      <div className="bg-white p-6 rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold mb-4 text-indigo-700">Interpreting the Chart</h2>
-        <ul className="list-disc list-inside text-gray-700">
-          <li>Each blue dot represents a data point.</li>
-          <li>The red line is the best-fit line (regression line) for the data.</li>
-          <li>A steeper line indicates a stronger correlation.</li>
-          <li>Dots clustered closely around the line suggest a stronger correlation.</li>
-        </ul>
       </div>
 
       <style jsx global>{`
