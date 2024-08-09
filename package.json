@@ -1,10 +1,12 @@
 {
   "name": "react-interactive-iframe",
   "version": "1.0.0",
+  "homepage": "https://crimsoncomedian.github.io/react-interactive-iframe/",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
     "recharts": "^2.1.11"
   },
   "scripts": {
