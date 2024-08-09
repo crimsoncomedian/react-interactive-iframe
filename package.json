@@ -1,6 +1,7 @@
 {
   "name": "react-interactive-iframe",
   "version": "1.0.0",
+  "homepage": "https://crimsoncomedian.github.io/react-interactive-iframe/",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
