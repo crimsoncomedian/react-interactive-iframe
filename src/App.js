@@ -13,7 +13,11 @@ const CorrelationExplorer = () => {
       const x = Math.random();
       const yMean = correlation * x + (1 - Math.abs(correlation)) * 0.5;
       const yStd = Math.sqrt(1 - correlation * correlation);
-      const y = yMean + yStd * (Math.random() + Math.random() + Math.random() - 1.5) / 2.1;
+      let y = yMean + yStd * (Math.random() + Math.random() + Math.random() - 1.5) / 2.1;
+
+      // Ensure y is within the 0 to 1 range
+      y = Math.max(0, Math.min(1, y));
+
       result.push({ x: x * 100, y: y * 100 });
     }
     return result;
@@ -30,8 +34,8 @@ const CorrelationExplorer = () => {
     const intercept = (sumY - slope * sumX) / n;
 
     return [
-      { x: 0, y: intercept },
-      { x: 100, y: slope * 100 + intercept }
+      { x: 0, y: Math.max(0, Math.min(100, intercept)) },
+      { x: 100, y: Math.max(0, Math.min(100, slope * 100 + intercept)) }
     ];
   };
 
