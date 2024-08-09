@@ -153,3 +153,13 @@ const CorrelationExplorer = () => {
         .recharts-scatter-symbol {
           transition: fill 0.3s ease;
         }
+        .recharts-scatter-symbol:hover {
+          fill: #5B21B6;
+          filter: brightness(1.2);
+        }
+      `}</style>
+    </div>
+  );
+};
+
+export default CorrelationExplorer;
